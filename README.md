@@ -1,4 +1,4 @@
-fruitPriceCrawler
+seafoodPriceCrawler
 =============
 
 This crawler use cURL to download pages from http://www.agrosg.com, use nodeJS to parse file and manage download processes.

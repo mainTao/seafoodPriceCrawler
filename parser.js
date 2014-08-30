@@ -3,7 +3,8 @@ var cheerio = require('cheerio');
 var parse = function(body){
     var $ = cheerio.load(body);
     var str = '';
-    var $rows = $('.pricebox .price:not(:first)');
+    var $rows = $('.pricebox .price');
+    $rows.splice(0, 1); // skip header row
 
     $rows.each(function(){
         var $cells = $(this).children();
